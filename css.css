@@ -335,6 +335,13 @@ footer{
   width: 1.5rem;
   height: 1.5rem;
 }
+.work-head .company img{
+  width: 4rem;
+  height: 4rem;
+}
+.work-head .company div{
+  padding: 4% 10%;
+}
 .works>div .text-bold{
   font-weight: bold;
 }
