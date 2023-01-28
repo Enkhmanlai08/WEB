@@ -1,3 +1,4 @@
+/*ehnii hesgiin zurag garchig ug unalt*/
 @media (max-width: 1000px) {
     .item{
       height: auto;
@@ -50,7 +51,7 @@
       flex-direction: row;
     }
   }
-
+/*menu shiljiltin heseg*/
   @media (max-width: 1000px) {
     .thirdsec .grid2{
       grid-template-columns: auto auto auto;
@@ -69,6 +70,7 @@
     /* .item3{grid-area: 1 / span 2 / 2 / 4;}
     .item4{grid-area: 1 / span 2 / 2 / 4;} */
   }
+/*hereglegc baiguullaga iin 2bagana shiljilt*/  
   @media (max-width: 700px) {
     .secondsec .grid1{
       grid-template-columns: auto auto;
@@ -77,6 +79,7 @@
       grid-template-columns: auto auto;
     }
   }
+/*unelemje osgo def 2 iin jijigrelt*/
   @media (max-width: 570px) {
     .det p{
       font-size: 1rem;
@@ -89,6 +92,9 @@
       font-size: 3.2rem;
     }
   }
+/*hereglegc baiguullaga iin 1bagana shiljilt
+  unelemje osgo def 2 iin jijigrelt
+*/
   @media (max-width: 450px) {
     .fst .item .i_h1 h1{
       font-size: 1.7rem;
@@ -107,6 +113,7 @@
       width: 8rem;
     }
   }
+/*unelemje osgo def 2 iin jijigrelt*/
   @media (max-width: 450px) {
     .det .gadget a img{
       width: 6rem;

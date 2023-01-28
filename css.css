@@ -1,3 +1,4 @@
+/*todorhoilj ogsn*/
 :root{
     --ygaan-color: #F01861;
     --har-color: #000000;
@@ -6,6 +7,7 @@
     --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
+/*undsen heseg*/
 *{
     font-family: 'Manrope', sans-serif;
     margin: 0;
@@ -27,25 +29,30 @@
   top: 0;
   /* box-shadow: 0.2px 0.2px 5px rgba(1, 1, 1, 0.5); */
 }
+/*nav bar*/
 .header header {
   display: flex;
   flex-direction: row;
   width: 97%;
   margin: 0 auto;
 }
+/*nuur logo*/
 .logo {
   margin-left: 1rem;
   height: 36.4px;
   width: 60px;
 }
+/*nav bar*/
 .header header nav {
   width: 100%; 
   display: flex;
   justify-content: space-between;
 }
+/*tses*/
 .header header nav .order {
   width: 100%;
 }
+
 .header header nav ul {
   width: 40rem;
   display: flex;
@@ -54,6 +61,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+/*tsesnii ug design*/
 .header header nav ul li a{
   font-family: 'Manrope';
   font-style: normal;
@@ -61,6 +69,7 @@
   font-size: 15px;
   color: var(--ygaan-color);
 }
+/*hadgalsan darah odnii heseg*/
 .header header .save {
   height: 1.5rem;
   width: 100%;
@@ -68,7 +77,7 @@
 .header header nav {
   margin-left: 2rem;
 }
-
+/*ehnii heseg*/
 .fst{
   height: auto;
   width: 100%;
@@ -83,6 +92,7 @@
   justify-content: center;
   flex-direction: row;
 }
+/*unelemjee osgo design*/
 .fst .item .i_h1{
   padding-top: 8%;
   text-align: right;
@@ -99,12 +109,21 @@
   font-family: 'Rubik', sans-serif;
   font-size: 4.2rem;
   color: var(--ygaan-color);
+  animation-name: osgo;
+  animation-duration: 2s;
 }
+/*unelemjee osgo animation*/
+@keyframes osgo{
+  0%   {font-size: 4.2rem;}
+  50%  {font-size: 5rem;}
+  100% {font-size: 4.2rem;}
+}
+/*background zurag*/
 .i_img{
   margin-top: 7%;
   width: 50%;
 }
-
+/*def ug 2 button*/
 .det{
   padding-top: 1%;
   display: flex;
@@ -132,21 +151,20 @@
   width: 40%;
   margin: 2%;
 }
-/* test end */
+/* hereglegch section*/
 .secondsec{
   width: 100%;
-  /* height: auto; */
   margin-top: 10%;
-
   background: white;
   z-index: 999;
 }
-
+/*hereglegch garchig*/
 .secondsec h2{
   margin-top: 5%;
   width: 100%;
   text-align: center;
 }
+/*yronhiii garcig p style*/
 .secondsec>div{
   display: flex;
   width: 100%;
@@ -155,9 +173,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.secondsec>div article{
-  /* margin: 0 3rem; */
-}
+
 .secondsec>div article h3{
   text-align: center;
   height: 4rem;
@@ -166,13 +182,13 @@
 .secondsec>div article p{
   text-align: left;
 }
-
+/*background zurgin design id*/
 #background{
   width: 100%;
   height: auto;
   margin-right: 0;
 }
-
+/*hereglegch grid hiisn heseg*/
 .secondsec .grid1{
   width: 95%;
   margin: 3rem auto;
@@ -180,14 +196,12 @@
   grid-template-columns: auto auto auto auto;
   grid-gap: 2.5rem;
 }
-
+/**/
 .secondsec .grid1 article h3 {
   text-align: center;
 }
-.secondsec .grid1 article {
-  /* margin: 0 3rem; */
-}
 
+/*baiguullaga section*/
 .thirdsec{
   display: flex;
   width: 95%;
@@ -196,12 +210,13 @@
   z-index: 999;
   flex-direction: column;
 }
-
+/*gol garcig*/
 .thirdsec h2{
   margin-top: 5%;
   width: 100%;
   text-align: center;
 }
+/*div design*/
 .thirdsec>div{
   width: 100%;
   margin-top: 5%;
@@ -213,16 +228,18 @@
   height: 4rem;
   margin: auto;
 }
+
 .thirdsec div div img{
   margin-bottom: 1rem;
 }
-
+/*baiguullaga gridee hiisn hedeg*/
 .thirdsec .grid2{
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   grid-gap: 2.5rem;
   margin: 3rem auto;
 }
+/*lolgo garcig design*/
 .thirdsec .grid2>div{
   text-align: center;
 }
@@ -239,6 +256,7 @@
 .thirdsec .grid2 article{
   margin: 0 3rem;
 }
+/*menu shiljit heseg*/
 #hamburger{
   display: none;
 }
@@ -266,7 +284,7 @@
 .open #mobile-menu>li{
   margin: 1rem 0.5rem;
 }
-/* hamburger 3 зураас */
+/*meun 3 zuraas*/
 #hamburger .bars div{
   width: 2rem;
   background: var(--ygaan-color);
@@ -274,21 +292,19 @@
   margin: 0.5rem;
   position: relative;
   right: 0;
-  transition: 0.4s;
+  transition: 1s;
 }
-/* hamburger 3 зураас дээр дарахад x тэмдэг болно */
+/*menu x boloh heseg*/
 .open .bar1 {
   transform: rotate(-45deg) translate(-6px, 6px);
 }
-
 .open .bar2 {
 opacity: 0;
 }
-
 .open .bar3 {
 transform: rotate(45deg) translate(-6px, -8px);
 }
-
+/* footer */
 footer{
   margin-top: 0.5rem;
   text-align: center;
