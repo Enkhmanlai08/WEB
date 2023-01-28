@@ -4,6 +4,7 @@
     --har-color: #000000;
     --tsenher-color: #18A0FB;
     --radius: 30px;
+    --minradius: 5px;
     --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
@@ -351,7 +352,6 @@ footer{
   border: 1px var(--ygaan-color) solid;
   border-radius: var(--radius);
   padding: 0.5rem 1rem;
-
 }
 .btn:hover{
   background: var(--ygaan-color);
@@ -360,6 +360,13 @@ footer{
 .works>div>p{
   margin: 1rem 0;
 }
+/*tsesnii hover*/
 
-
-
+.huree{
+  border: 1px var(--ygaan-color) solid;
+  border-radius: var(--minradius);
+}
+.savehuree{
+  height: 2rem;
+  width: 100%;
+}
