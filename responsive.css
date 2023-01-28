@@ -50,6 +50,11 @@
       margin: 2%;
       flex-direction: row;
     }
+    .works {
+
+      grid-template-columns: auto auto ;
+
+    }
   }
 /*menu shiljiltin heseg*/
   @media (max-width: 1000px) {
@@ -77,6 +82,10 @@
     }
     .thirdsec .grid2{
       grid-template-columns: auto auto;
+    }
+    .works {
+      grid-template-columns: auto  ;
+
     }
   }
 /*unelemje osgo def 2 iin jijigrelt*/

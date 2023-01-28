@@ -304,6 +304,7 @@ opacity: 0;
 .open .bar3 {
 transform: rotate(45deg) translate(-6px, -8px);
 }
+
 /* footer */
 footer{
   margin-top: 0.5rem;
@@ -311,3 +312,46 @@ footer{
   background-color: white;
   padding: 2rem;
 }
+.works {
+  display: grid;
+  width: 90%;
+  margin: 2rem auto;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2rem;
+}
+.works>div{
+  width: 70%;
+  margin: 2rem auto 0 auto;
+}
+.works>div>div{
+  display: flex;
+  justify-content: space-between;
+}
+.work-head .company{
+  display: flex;
+
+}
+.work-head .star-save{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.works>div .text-bold{
+  font-weight: bold;
+}
+.btn{
+  background: white;
+  border: 1px var(--ygaan-color) solid;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+
+}
+.btn:hover{
+  background: var(--ygaan-color);
+  color: white;
+}
+.works>div>p{
+  margin: 1rem 0;
+}
+
+
+
