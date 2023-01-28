@@ -2,14 +2,18 @@
     --ygaan-color: #F01861;
     --har-color: #000000;
     --tsenher-color: #18A0FB;
-    --radius: 50px;
+    --radius: 30px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 *{
+    font-family: 'Manrope', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 /* header хэсэг */
 .header {
@@ -50,7 +54,11 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.header header nav ul li a {
+.header header nav ul li a{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
   color: var(--ygaan-color);
 }
 .header header .save {
@@ -60,72 +68,230 @@
 .header header nav {
   margin-left: 2rem;
 }
-.firstsec{
-  display: flex;
+
+.fst{
+  height: auto;
   width: 100%;
-  height: 95vh;
-  background: white;
-  z-index: 99;
-}
-
-.osgo{
-  color: #F01861;
-  width: 1392px;
-  height: 80px;
-  top: 75px;
-}
-
-.firstsec h1{
-  padding-left: 10rem;
-  padding-top: 10rem;
-  color: #000000;
-  top: 75px;
-}
-
-.secondsec{
   display: flex;
+  flex-wrap: wrap;
+}
+.item{
   width: 100%;
-  height: 70vh;
-  background: white;
-  z-index: 99;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+.fst .item .i_h1{
+  padding-top: 8%;
+  text-align: right;
+  width: 50%;
+  font-family: 'Rubik', sans-serif;
+  /* height: 200px; */
+}
+.fst .item .i_h1 h1{
+  font-family: 'Rubik', sans-serif;
+  font-size: 3.7rem;
+  /* height: 200px; */
+}
+.fst .item .i_h1 .osgo{
+  font-family: 'Rubik', sans-serif;
+  font-size: 4.2rem;
+  color: var(--ygaan-color);
+}
+.i_img{
+  margin-top: 7%;
+  width: 50%;
+}
+
+.det{
+  padding-top: 1%;
+  display: flex;
   flex-direction: column;
+  width: 30%;
+  margin-left: 10%;
+}
+.det p{
+  /* text-indent: 50px; */
+  margin-top: 10%;
+  font-size: 2rem;
+}
+.gadget{
+  padding-top: 30%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.det .gadget a img{
+  width: 12rem;
+}
+.det a img{
+  width: 40%;
+  margin: 2%;
+}
+/* test end */
+.secondsec{
+  width: 100%;
+  /* height: auto; */
+  margin-top: 10%;
+
+  background: white;
+  z-index: 999;
 }
 
 .secondsec h2{
-  margin-top: 5rem;
+  margin-top: 5%;
+  width: 100%;
   text-align: center;
 }
 .secondsec>div{
-  width: 80%;
-  margin: auto;
+  display: flex;
+  width: 100%;
+  margin-top: 5%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .secondsec>div article{
-  width: 20%;
-  margin: 0 3rem;
+  /* margin: 0 3rem; */
 }
 .secondsec>div article h3{
   text-align: center;
   height: 4rem;
 
 }
-
-/* .secondsec div{
-  display: flex;
-  flex-direction: row;
-  margin-top: 5rem;
-  
+.secondsec>div article p{
+  text-align: left;
 }
-.secondsec div article h3{
-  justify-content: space-between;
-  display: flex;
+
+#background{
+  width: 100%;
+  height: auto;
+  margin-right: 0;
+}
+
+.secondsec .grid1{
+  width: 95%;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2.5rem;
+}
+
+.secondsec .grid1 article h3 {
   text-align: center;
+}
+.secondsec .grid1 article {
+  /* margin: 0 3rem; */
+}
+
+.thirdsec{
+  display: flex;
+  width: 95%;
+  margin: auto;
+  background: white;
+  z-index: 999;
   flex-direction: column;
 }
-.secondsec div article p{
-  margin-top: 3rem;
+
+.thirdsec h2{
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.thirdsec>div{
+  width: 100%;
+  margin-top: 5%;
   display: flex;
-  width: 80%;
-} */
+}
+
+.thirdsec>div div h3{
+  text-align: center;
+  height: 4rem;
+  margin: auto;
+}
+.thirdsec div div img{
+  margin-bottom: 1rem;
+}
+
+.thirdsec .grid2{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 2.5rem;
+  margin: 3rem auto;
+}
+.thirdsec .grid2>div{
+  text-align: center;
+}
+.thirdsec .grid2>div img{
+  width: 50px;
+}
+.thirdsec .grid2>div>div h3{
+  text-align: center;
+}
+
+.thirdsec .grid2 div div p{
+  text-align: left;
+}
+.thirdsec .grid2 article{
+  margin: 0 3rem;
+}
+#hamburger{
+  display: none;
+}
+#mobile-menu{
+  display: none;
+}
+.open #mobile-menu{
+  display: block;
+  position: absolute;
+  background: white;
+  border-bottom: var(--ygaan-color) 1px solid;
+  border-left: var(--ygaan-color) 1px solid;
+  border-right: var(--ygaan-color) 1px solid;
+  border-radius: var(--radius);
+  top: 4rem;
+  right: 0;
+  width: 11rem;
+  height: auto;
+  box-shadow: 0.2px 0.2px 0.2px rgba(0, 0, 0, 0.5);
+}
+.open #mobile-menu>li a{
+  color: var(--ygaan-color);
+  margin: 2rem 0;
+}
+.open #mobile-menu>li{
+  margin: 1rem 0.5rem;
+}
+/* hamburger 3 зураас */
+#hamburger .bars div{
+  width: 2rem;
+  background: var(--ygaan-color);
+  height: 0.1rem;
+  margin: 0.5rem;
+  position: relative;
+  right: 0;
+  transition: 0.4s;
+}
+/* hamburger 3 зураас дээр дарахад x тэмдэг болно */
+.open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+opacity: 0;
+}
+
+.open .bar3 {
+transform: rotate(45deg) translate(-6px, -8px);
+}
+
+footer{
+  margin-top: 0.5rem;
+  text-align: center;
+  background-color: white;
+  padding: 2rem;
+}

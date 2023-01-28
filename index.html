@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="ajly, ajil, ajillah, ajliin zar">
-    <title>Enkhmanlai</title>
+    <title>Ajly Platform</title>
     <!-- mobile metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -14,13 +14,21 @@
         <meta name="keywords" content="">
         <meta name="description" content="">
         <meta name="author" content="">
-        <!-- style css -->
+    <!-- style css -->
         <link rel="stylesheet" type="text/css" href="css.css">
-        <!-- Responsive-->
+    <!-- Responsive-->
         <link rel="stylesheet" href="responsive.css">
-        <!-- favicon -->
+    <!-- favicon -->
         <link rel="icon" href="photos/logo1.png" type="image/gif" />
-     </head>
+        <script>
+            function toggleMobileMenu(menu) {
+                menu.classList.toggle('open');
+            }
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Rubik:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
@@ -31,8 +39,8 @@
           <nav>
             <div class="order">
               <ul>
-                <li><a href="#">Хэрэглэгч</a></li>
-                <li><a href="#">Байгууллага</a></li>
+                <li><a href="#1">Хэрэглэгч</a></li>
+                <li><a href="#2">Байгууллага</a></li>
                 <li><a href="ajil.html">Ажлууд</a></li>
                 <li><a href="huselt.html">Хүсэлтүүд</a></li>
                 <li><a href="batalgaajsan.html">Баталгаажсан</a></li>
@@ -42,88 +50,114 @@
               ><img src="./photos/star.png" class="save" alt="hadgalsan logo"
             /></a>
           </nav>
-        </header>
-      </div>
-    <section class="firstsec">
-        <h1>Үнэмлэмжээ <span class="osgo">өсгө</span></h1>
-        <img src="./photos/back.png"  style="width: 50px; height: auto;"  alt="ariin zurag">
-        <div>
-            <a href="https://www.apple.com/app-store/"><img src="./photos/appstorelogo.png"  style="width: 50px; height: auto;"  alt="ariin zurag"></a>
-            <a href="https://www.bing.com/search?q=playstore&cvid=4ee724dc6d1a4d2e8365c5a3d480d66f&aqs=edge..69i57j0l8.2580j0j4&FORM=ANAB01&PC=DCTS"><img src="./photos/playstorelogo.png"  style="width: 50px; height: auto;"  alt="ariin zurag"></a>
+          <div id="hamburger" onclick="toggleMobileMenu(this)">
+            <div class="bars">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="mobile-menu">
+                <li><a href="ajil.html">Ажлууд</a></li>
+                <li><a href="huselt.html">Хүсэлтүүд</a></li>
+                <li><a href="batalgaajsan.html">Баталгаажсан</a></li>
+                <li><a href="hadgalsan.html">Хадгалсан</a>
+            </ul>
+
         </div>
-    </section>
-    <section class="secondsec">
+        </header>
+    </div>
+    <div class="fst">
+        <div class="item">
+            <div class="i_h1">
+                <h1>Үнэмлэмжээ <span class="osgo">өсгө</span></h1>
+            </div>
+            <div class="i_img">
+                <img src="./photos/back.png" id="background" alt="ariin zurag">
+            </div>
+        </div>
+        <div class="det">
+            <p>Цагийн ажил хайгч болон ажил олгогч нарын хооронд үүсэх бүхий л харилцааг шийдсэн цогц платформ юм.</p>
+            <div class="gadget">
+                <a href="https://www.apple.com/app-store/"><img src="./photos/appstorelogo.png"  alt="ariin zurag"></a>
+                <a href="https://www.bing.com/search?q=playstore&cvid=4ee724dc6d1a4d2e8365c5a3d480d66f&aqs=edge..69i57j0l8.2580j0j4&FORM=ANAB01&PC=DCTS"><img src="./photos/playstorelogo.png"   alt="ariin zurag"></a>
+            </div>
+        </div>
+    </div>
+
+    <section class="secondsec" id="1"> 
         <h2>Хэрэглэгч</h2>
-        <div>
-            <article>
+        <div class="grid1">
+            <article class="item1">
                 <h3>Ажилласан түүх</h3>
                 <p>Системээр дамжиж ажилласан бүх ажлын түүхийг үүсгэснээр ажилтны CV-г үнэ цэнийг өсгөх</p>
             </article>
-            <article>
+            <article class="item2">
                 <h3>Хаяг</h3>
                 <p>Ажлын зарууд нь өөрт хамгийн ойр байрших заруудын дарааллаар харагдах ба ажилтан хүссэн газартаа ажиллах боломж</p>
             </article>
-            <article>
+            <article class="item3">
                 <h3>Ажлын хуваарь</h3>
                 <p>Ажлын заруудаас өөрийн ажиллах боломжтой цагуудаа хайх ба хүссэн ажлын хуваариа үүсгэх боломж</p>
             </article>
-            <article>
+            <article class="item4">
                 <h3>Ажилласан цаг</h3>
                 <p>Ажлын хөлс нь цагаар хэмжигдэх ба ажиллаж дуусаад цалингаа авах боломж</p>
             </article>
         </div>
     </section>
-    <section>
+    <section class="thirdsec" id="2">
         <h2>Байгууллага ажил олгогчдод өгөх үнэ цэнэ.</h2>
-        <div>
-            <img src="./photos/profile.png" style="width: 50px; height: auto;"   alt="">
+        <div class="grid2">
             <div>
-                <h3>Ажилтан хайх</h3>
-                <p>Цагийн ажил хайгчдын хүний нөөцийн баазыг бий болгосноор хүссэн ажилтнаа хялбараар олох</p>
+                <img src="./photos/profile.png"   alt="">
+                <div>
+                    <h3>Ажилтан хайх</h3>
+                    <p>Цагийн ажил хайгчдын хүний нөөцийн баазыг бий болгосноор хүссэн ажилтнаа хялбараар олох</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <img src="./photos/tailan.png" style="width: 50px; height: auto;"   alt="">
             <div>
-                <h3>Цахим гэрээ</h3>
-                <p>Хөдөлмөрийн харилцааг зохицуулагч бүхий л гэрээг цахимаар хийх боломжийг бүрдүүлэх</p>
+                <img src="./photos/tailan.png"   alt="">
+                <div>
+                    <h3>Цахим гэрээ</h3>
+                    <p>Хөдөлмөрийн харилцааг зохицуулагч бүхий л гэрээг цахимаар хийх боломжийг бүрдүүлэх</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <img src="./photos/icons8-stack-of-money-24.png"  style="width: 50px; height: auto;"  alt="">
             <div>
-                <h3>Цалин хөлс</h3>
-                <p>Цалин хөлсний бүх тооцооллыг хийж олгох боломж</p>
+                <img src="./photos/icons8-stack-of-money-24.png"   alt="">
+                <div>
+                    <h3>Цалин хөлс</h3>
+                    <p>Цалин хөлсний бүх тооцооллыг хийж олгох боломж</p>
+                </div>
             </div>
-        </div>
-        <div>
             <div>
-                <h3>Цахим гэрээ</h3>
-                <p>Хөдөлмөрийн харилцааг зохицуулагч бүхий л гэрээг цахимаар хийх боломжийг бүрдүүлэх</p>
+                <img src="./photos/geree.png"   alt="">
+                <div>
+                    <h3>Цахим гэрээ</h3>
+                    <p>Хөдөлмөрийн харилцааг зохицуулагч бүхий л гэрээг цахимаар хийх боломжийг бүрдүүлэх</p>
+                </div>
             </div>
-            <img src="./photos/geree.png"  style="width: 50px; height: auto;"  alt="">
-        </div>
-        <div>
             <div>
-                <h3>Цаг бүртгэл</h3>
-                <p>Апп-р цаг бүртгэдэг болсноор хүний нөөцийн тайлан авах илүү хялбар боломж</p>
+                <img src="./photos/time.png"   alt="">
+                <div>
+                    <h3>Цаг бүртгэл</h3>
+                    <p>Апп-р цаг бүртгэдэг болсноор хүний нөөцийн тайлан авах илүү хялбар боломж</p>
+                </div>
             </div>
-            <img src="./photos/time.png"  style="width: 50px; height: auto;"  alt="">
-        </div>
-        <div>
             <div>
-                <h3>Үнэлгээ</h3>
-                <p>Үнэлгээ өгдөг болсноор ажилтнууд илүү чадварлаг болно</p>
+                <img src="./photos/arrow.png"   alt="">
+                <div>
+                    <h3>Үнэлгээ</h3>
+                    <p>Үнэлгээ өгдөг болсноор ажилтнууд илүү чадварлаг болно</p>
+                </div>
             </div>
-            <img src="./photos/arrow.png" style="width: 50px; height: auto;"   alt="">
         </div>
     </section>
     <footer>
         <div>
-            <img src="./photos/facebook.png"  style="width: 50px; height: auto;"  alt="a">
-            <img src="./photos/instagram.png" style="width: 50px; height: auto;"   alt="s">
-            <img src="./photos/twitter.png"  style="width: 50px; height: auto;"  alt="">
-            <img src="./photos/youtube.png" style="width: 50px; height: auto;"   alt="">
+            <img src="./photos/facebook.png"  style="width: 30px; height: auto;"  alt="a">
+            <img src="./photos/instagram.png" style="width: 30px; height: auto;"   alt="s">
+            <img src="./photos/twitter.png"  style="width: 30px; height: auto;"  alt="">
+            <img src="./photos/youtube.png" style="width: 30px; height: auto;"   alt="">
         </div>
         <p>© Ajly, Inc. 2022.</p>
     </footer>

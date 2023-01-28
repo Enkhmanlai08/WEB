@@ -1,0 +1,114 @@
+@media (max-width: 1000px) {
+    .item{
+      height: auto;
+      width: 100%;
+      flex: 100%;
+    }
+    .fst{
+      height: auto;
+      width: 100%;
+      flex: 100%;
+    }
+    .det p{
+      flex: 100%;
+      width: 100%;
+    }
+    .i_h1{
+      margin-bottom: 10%;
+      width: 100%;
+  
+    }
+    .i_img{
+      text-align: center;
+      margin-top: 0;
+      width: 100%;
+  
+    }
+    .i_h1 h1{
+      text-align: center;
+      width: 100%;
+      flex: 100%;
+    }
+    .fst .det{
+      width: 100%;
+      margin-left: 0;
+      margin: 0%;
+      padding: 0%;
+      }
+    .fst .det p{
+      text-align: center;
+      padding: 10%;
+    }
+    .det .gadget{
+      width: 100%;
+      text-align: center;
+      padding-top: 5%;
+    }
+    .det .gadget a img{
+      flex: 50%;
+      margin: 2%;
+      flex-direction: row;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .thirdsec .grid2{
+      grid-template-columns: auto auto auto;
+    }
+    .header header nav{
+      display: none;
+    }
+    #hamburger{
+      display: inline-block;
+    } 
+    .header header {
+      justify-content: space-between;
+    }
+    /* .item1{grid-area: 1 / span 2 / 3 / 3;}
+    .item2{grid-area: 1 / span 2 / 3 / 5;} */
+    /* .item3{grid-area: 1 / span 2 / 2 / 4;}
+    .item4{grid-area: 1 / span 2 / 2 / 4;} */
+  }
+  @media (max-width: 700px) {
+    .secondsec .grid1{
+      grid-template-columns: auto auto;
+    }
+    .thirdsec .grid2{
+      grid-template-columns: auto auto;
+    }
+  }
+  @media (max-width: 570px) {
+    .det p{
+      font-size: 1rem;
+    }
+    .fst .item .i_h1 h1{
+      font-size: 2.7rem;
+      /* height: 200px; */
+    }
+    .fst .item .i_h1 .osgo{
+      font-size: 3.2rem;
+    }
+  }
+  @media (max-width: 450px) {
+    .fst .item .i_h1 h1{
+      font-size: 1.7rem;
+      /* height: 200px; */
+    }
+    .fst .item .i_h1 .osgo{
+      font-size: 2.2rem;
+    }
+    .secondsec .grid1{
+      grid-template-columns: auto;
+    }
+    .thirdsec .grid2{
+      grid-template-columns: auto;
+    }
+    .det .gadget a img{
+      width: 8rem;
+    }
+  }
+  @media (max-width: 450px) {
+    .det .gadget a img{
+      width: 6rem;
+    }
+  }

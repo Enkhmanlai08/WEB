@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="ajly, ajil, ajillah, ajliin zar">
-    <title>Enkhmanlai</title>
+    <title>Ajly Platform</title>
     <!-- mobile metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -14,13 +14,21 @@
         <meta name="keywords" content="">
         <meta name="description" content="">
         <meta name="author" content="">
-        <!-- style css -->
+    <!-- style css -->
         <link rel="stylesheet" type="text/css" href="css.css">
-        <!-- Responsive-->
+    <!-- Responsive-->
         <link rel="stylesheet" href="responsive.css">
-        <!-- favicon -->
+    <!-- favicon -->
         <link rel="icon" href="photos/logo1.png" type="image/gif" />
-     </head>
+        <script>
+            function toggleMobileMenu(menu) {
+                menu.classList.toggle('open');
+            }
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Rubik:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
@@ -31,8 +39,8 @@
           <nav>
             <div class="order">
               <ul>
-                <li><a href="#">Хэрэглэгч</a></li>
-                <li><a href="#">Байгууллага</a></li>
+                <li><a href="index.html">Хэрэглэгч</a></li>
+                <li><a href="index.html">Байгууллага</a></li>
                 <li><a href="ajil.html">Ажлууд</a></li>
                 <li><a href="huselt.html">Хүсэлтүүд</a></li>
                 <li><a href="batalgaajsan.html">Баталгаажсан</a></li>
@@ -42,8 +50,22 @@
               ><img src="./photos/star.png" class="save" alt="hadgalsan logo"
             /></a>
           </nav>
+          <div id="hamburger" onclick="toggleMobileMenu(this)">
+            <div class="bars">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="mobile-menu">
+                <li><a href="ajil.html">Ажлууд</a></li>
+                <li><a href="huselt.html">Хүсэлтүүд</a></li>
+                <li><a href="batalgaajsan.html">Баталгаажсан</a></li>
+                <li><a href="hadgalsan.html">Хадгалсан</a>
+            </ul>
+
+        </div>
         </header>
-      </div>
+    </div>
     <div>
         <div>
             <img src="./photos/pizza.png" alt="">
@@ -57,16 +79,14 @@
         <p>Тавигдах шаардлага : Царайны зөв төрхтэй, харилцааны соёлтой байх.</p>
         <button>learn more</button>
     </div>
-
-
     <footer>
-        <div>
-            <img src="./photos/facebook.png" alt="a">
-            <img src="./photos/instagram.png" alt="s">
-            <img src="./photos/twitter.png" alt="">
-            <img src="./photos/youtube.png" alt="">
-        </div>
-        <p>© Ajly, Inc. 2022.</p>
-    </footer>
+      <div>
+          <img src="./photos/facebook.png"  style="width: 30px; height: auto;"  alt="a">
+          <img src="./photos/instagram.png" style="width: 30px; height: auto;"   alt="s">
+          <img src="./photos/twitter.png"  style="width: 30px; height: auto;"  alt="">
+          <img src="./photos/youtube.png" style="width: 30px; height: auto;"   alt="">
+      </div>
+      <p>© Ajly, Inc. 2022.</p>
+  </footer>
 </body>
 </html>
