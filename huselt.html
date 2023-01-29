@@ -28,6 +28,20 @@
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Rubik:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <main id="main"></main>
+    <script src="works.js" type="module"></script>
+    <!-- <script>
+        const jsondata=
+    </script> -->
+
+    <script type="module">
+        import works from './modules/works.js';
+        const gebi = id => document.getElementById(id);
+        const wrks = new works("https://api.jsonbin.io/b/63d610b3c0e7653a05645d57");
+        wrks.Download("main");
+
+    </script>
+
     <div class="header">
         <header>
           <a href="index.html"><img src="./photos/logo1.png" alt="logo zurag" class="logo"></a>
@@ -59,19 +73,6 @@
 
         </div>
         </header>
-    </div>
-    <div>
-        <div>
-            <img src="./photos/pizza.png" alt="">
-            <h4>Pizzadi</h4>
-            <p>Зөөгч</p>
-            <img src="./photos/star.png" alt="">
-        </div>
-        <p>Байршил : ХУД 7-р хороо, 11-р хороолол, 2-  р сургууль, 44-р байр</p>
-        <p>Ажиллах цаг : 8 цаг (7 хоногт)</p>
-        <p>Цалин : 50000</p>
-        <p>Тавигдах шаардлага : Царайны зөв төрхтэй, харилцааны соёлтой байх.</p>
-        <button>learn more</button>
     </div>
     <footer>
       <div>

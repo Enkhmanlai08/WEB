@@ -43,6 +43,7 @@
   height: 36.4px;
   width: 60px;
 }
+
 /*nav bar*/
 .header header nav {
   width: 100%; 
@@ -343,6 +344,9 @@ footer{
 }
 .work-head .company div{
   padding: 4% 10%;
+}.work-head .company img{
+  height: 2rem;
+  width: 2rem;
 }
 .works>div .text-bold{
   font-weight: bold;
