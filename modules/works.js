@@ -9,25 +9,26 @@ export class worksitem{
         this.worktime = work.worktime;
         this.salary = work.salary;
         this.Requirement = work.Requirement;
-        this.save = work.save;
     }
     Render(){
-        return `<div class="work-head">
-            <div class="company">
-            <img src="${this.logo}" alt="">
+        return `      <div>
+        <div class="work-head">
+          <div class="company">
+            <img src=${this.logo} alt="">
             <div>
-                <h4>${this.title}</h4>
-                <p>${this.role}</p>
+              <h4>${this.title}</h4>
+              <p>${this.role}</p>
             </div>
-            </div>
-            <img src="./photos/star.png" class="star-save" alt="">
+          </div>
+          <img src="./photos/star.png" class="star-save" alt="">
         </div>
         <p><span class="text-bold">Байршил</span> : ${this.location}</p>
         <p><span class="text-bold">Ажиллах цаг</span> : ${this.worktime}</p>
         <p><span class="text-bold">Цалин</span> : ${this.salary}</p>
         <p><span class="text-bold">Тавигдах шаардлага</span> : ${this.Requirement}</p>
         <button class="btn">learn more</button>
-        </div>`
+      </div>
+      `
     }
 }
 export default class works{
@@ -44,15 +45,16 @@ export default class works{
         })
     }
     Download(targetElm){
-        fetch('${this._workUrl}/latest')
-            .then(result => {
+        fetch(`${this._worksUrl}/latest`)
+            .then((result) => {
+                console.log(result);
                 result.json()
-                    .then(jsob => {
-                        const filtered = jsob.filter(workitem => workitem.status == "requested")
+                    .then((jsob) => {
+                        const filtered = jsob.record.works.filter((filter) => filter.status.includes("work"))//filter((filter) => filter.status.includes("work"))
                         if(filtered.length > 0){
                             gebi(targetElm).insertAdjacentHTML("afterbegin",
                             filtered.map(newwork => {
-                                const _newwork = new worksitem(newwork);
+                                var _newwork = new worksitem(newwork);
                                 this._worksList.push(_newwork);
                                 return _newwork.Render();
                             })
@@ -61,7 +63,17 @@ export default class works{
                         }
                     })
             })
-            .catch(err => {console.log(err)});
+            .catch(err => {
+                console.log("Asd");
+                console.log(err)
+            });
     }
 }
-const gebi = id => document.getElementById(id);
+
+
+// const gebi = id => document.getElementById(id);
+
+const gebi = id => document.querySelector(id);
+const wrks = new works("https://api.jsonbin.io/v3/b/63d74d17ace6f33a22cddac3");
+wrks.Download(".works");
+console.log("end")

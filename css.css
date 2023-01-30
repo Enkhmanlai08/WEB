@@ -308,12 +308,18 @@ transform: rotate(45deg) translate(-6px, -8px);
 }
 
 /* footer */
-footer{
+.footer{
   margin-top: 0.5rem;
   text-align: center;
   background-color: white;
   padding: 2rem;
 }
+.footer div .svgitem{
+  width: 30px;
+  height: 30px;
+  color: var(--ygaan-color);
+}
+
 /*jishee ajliin zar uuseh css*/
 .works {
   display: grid;
