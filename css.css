@@ -1,16 +1,16 @@
 /*todorhoilj ogsn*/
 :root{
-    --ygaan-color: #F01861;
-    --har-color: #000000;
-    --tsenher-color: #18A0FB;
-    --radius: 30px;
-    --minradius: 5px;
-    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --color-default: #F01861;
+    --color-black: #000000;
+    --color-blue: #18A0FB;
+    --radius-button: 30px;
+    --radius-menu: 5px;
+    --font-default: 'Manrope', sans-serif;
+    --font-title: 'Rubik', sans-serif;
 }
 /*undsen heseg*/
 *{
-    font-family: 'Manrope', sans-serif;
+    font-family: var(--font-default);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -69,7 +69,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  color: var(--ygaan-color);
+  color: var(--color-default);
 }
 /*hadgalsan darah odnii heseg*/
 .header header .save {
@@ -99,18 +99,18 @@
   padding-top: 8%;
   text-align: right;
   width: 50%;
-  font-family: 'Rubik', sans-serif;
+  font-family: var(--font-title);
   /* height: 200px; */
 }
 .fst .item .i_h1 h1{
-  font-family: 'Rubik', sans-serif;
+  font-family: var(--font-title);
   font-size: 3.7rem;
   /* height: 200px; */
 }
 .fst .item .i_h1 .osgo{
-  font-family: 'Rubik', sans-serif;
+  font-family: var(--font-title);
   font-size: 4.2rem;
-  color: var(--ygaan-color);
+  color: var(--color-default);
   animation-name: osgo;
   animation-duration: 2s;
 }
@@ -269,10 +269,10 @@
   display: block;
   position: absolute;
   background: white;
-  border-bottom: var(--ygaan-color) 1px solid;
-  border-left: var(--ygaan-color) 1px solid;
-  border-right: var(--ygaan-color) 1px solid;
-  border-radius: var(--radius);
+  border-bottom: var(--color-default) 1px solid;
+  border-left: var(--color-default) 1px solid;
+  border-right: var(--color-default) 1px solid;
+  border-radius: var(--radius-button);
   top: 4rem;
   right: 0;
   width: 11rem;
@@ -280,7 +280,7 @@
   box-shadow: 0.2px 0.2px 0.2px rgba(0, 0, 0, 0.5);
 }
 .open #mobile-menu>li a{
-  color: var(--ygaan-color);
+  color: var(--color-default);
   margin: 2rem 0;
 }
 .open #mobile-menu>li{
@@ -289,7 +289,7 @@
 /*meun 3 zuraas*/
 #hamburger .bars div{
   width: 2rem;
-  background: var(--ygaan-color);
+  background: var(--color-default);
   height: 0.1rem;
   margin: 0.5rem;
   position: relative;
@@ -317,7 +317,7 @@ transform: rotate(45deg) translate(-6px, -8px);
 .footer div .svgitem{
   width: 30px;
   height: 30px;
-  color: var(--ygaan-color);
+  color: var(--color-default);
 }
 
 /*jishee ajliin zar uuseh css*/
@@ -359,12 +359,12 @@ transform: rotate(45deg) translate(-6px, -8px);
 }
 .btn{
   background: white;
-  border: 1px var(--ygaan-color) solid;
-  border-radius: var(--radius);
+  border: 1px var(--color-default) solid;
+  border-radius: var(--radius-button);
   padding: 0.5rem 1rem;
 }
 .btn:hover{
-  background: var(--ygaan-color);
+  background: var(--color-default);
   color: white;
 }
 .works>div>p{
@@ -373,8 +373,8 @@ transform: rotate(45deg) translate(-6px, -8px);
 /*tsesnii hover*/
 
 .huree{
-  border: 1px var(--ygaan-color) solid;
-  border-radius: var(--minradius);
+  border: 1px var(--color-default) solid;
+  border-radius: var(--radius-menu);
 }
 .savehuree{
   height: 2rem;
