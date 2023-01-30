@@ -65,7 +65,7 @@
 }
 /*tsesnii ug design*/
 .header header nav ul li a{
-  font-family: 'Manrope';
+  font-family: var(--font-default);
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
